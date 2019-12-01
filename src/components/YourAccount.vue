@@ -1,0 +1,3 @@
+<template>
+  <h1>Hello from my account</h1>
+</template>
