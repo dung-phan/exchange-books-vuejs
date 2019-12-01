@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-book v-for="book in books" :key="book.id"> </app-book>
+    <app-book v-for="book in books" :key="book.id" :book="book"> </app-book>
   </div>
 </template>
 <script>
@@ -54,6 +54,20 @@ export default {
         },
         {
           id: 7,
+          name: "Letters from a Stoic",
+          image:
+            "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1421619214l/97411.jpg",
+          author: "Seneca"
+        },
+        {
+          id: 8,
+          name: "Letters from a Stoic",
+          image:
+            "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1421619214l/97411.jpg",
+          author: "Seneca"
+        },
+        {
+          id: 9,
           name: "Letters from a Stoic",
           image:
             "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1421619214l/97411.jpg",
