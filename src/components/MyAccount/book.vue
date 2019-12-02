@@ -27,7 +27,7 @@
             @click="giveBook"
             :disabled="quantity <= 0"
           >
-            Select
+            Exchange
           </button>
         </div>
       </div>
@@ -44,14 +44,14 @@ export default {
     };
   },
   methods: {
-    ...mapActions(["giveBook"]),
+    ...mapActions({ placeOrder: "giveBook" }),
     giveBook() {
       const order = {
         id: this.book.id,
         quantity: this.quantity
       };
       console.log(order);
-      this.giveBook();
+      this.placeOrder(order);
     }
   }
 };

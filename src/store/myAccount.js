@@ -15,11 +15,8 @@ const mutations = {
         quantity: quantity
       });
     }
-    console.log("what is state", state);
 
-    console.log("what is record", record);
-
-    state.cart -= quantity;
+    state.cart += Number(quantity);
   },
   GIVE_BOOK(state, { id, quantity }) {
     const record = state.books.find(element => element.id == id);
@@ -28,7 +25,7 @@ const mutations = {
     } else {
       state.books.splice(state.books.indexOf(record), 1);
     }
-    state.cart += quantity;
+    state.cart -= Number(quantity);
   }
 };
 const actions = {
