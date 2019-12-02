@@ -8,8 +8,9 @@
       </div>
       <div class="panel-body">
         <div>By {{ book.author }}</div>
+        <br />
         <img :src="book.image" />
-        <div class="pull-left">
+        <div>
           <input
             type="number"
             class="form-control"
