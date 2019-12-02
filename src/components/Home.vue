@@ -17,4 +17,7 @@ h1 {
   line-height: 70px;
   letter-spacing: -0.45px;
 }
+img {
+  width: 45%;
+}
 </style>
