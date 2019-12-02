@@ -8,8 +8,8 @@ const mutations = {
   }
 };
 const actions = {
-  getBook: ({ commit }) => {
-    commit();
+  getBook: ({ commit }, order) => {
+    commit("GET_BOOK", order);
   },
   setBooks: ({ commit }) => {
     commit("SET_BOOKS", books);

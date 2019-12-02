@@ -28,7 +28,7 @@ export default {
   padding: 0;
 }
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   line-height: 1.4;
   padding: 30px;
 }
