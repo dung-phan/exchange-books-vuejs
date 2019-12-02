@@ -40,12 +40,13 @@ export default {
     };
   },
   methods: {
-    exchangeBook() {
+    getBook() {
       const order = {
         bookId: this.book.id,
         quantity: this.quantity
       };
       console.log(order);
+      this.$store.dispatch("getBook", order);
       this.quantity = 0;
     }
   }

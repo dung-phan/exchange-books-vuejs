@@ -4,10 +4,10 @@
   </div>
 </template>
 <script>
-import Books from "./YourAccount";
+import Book from "./book";
 export default {
   components: {
-    appBook: Books
+    appBook: Book
   },
   computed: {
     books() {

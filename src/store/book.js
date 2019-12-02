@@ -34,7 +34,7 @@ const actions = {
 const getters = {
   yourAccount(state, getters) {
     return state.books.map(book => {
-      const record = getters.books.find(book => book.id == id);
+      const record = getters.books.find(element => element.id == book.id);
       return {
         id: book.id,
         quantity: book.quantity,
