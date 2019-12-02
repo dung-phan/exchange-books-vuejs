@@ -1,16 +1,18 @@
 <template>
   <div class="col-sm-6 col-md-4">
-    <div class="panel panel-success">
-      <div class="panel-heading">
-        <h3 class="panel-title">
+    <div class="card border-success mb-3">
+      <div class="card-header border-success border-light">
+        <h3 class="card-title">
           {{ book.name }}
         </h3>
       </div>
-      <div class="panel-body">
+      <div class="card-body">
         <div>By {{ book.author }}</div>
         <br />
-        <img :src="book.image" />
-        <div>
+        <img class="image-book" :src="book.image" />
+        <br />
+        <br />
+        <div class="pull-left">
           <input
             type="number"
             class="form-control"
@@ -18,10 +20,11 @@
             v-model="quantity"
           />
         </div>
-        <div class="pull-right">
+
+        <div class="pull-left">
           <button
             class="btn btn-success"
-            @click="exchangeBook"
+            @click="getBook"
             :disabled="quantity <= 0"
           >
             Select
@@ -42,13 +45,25 @@ export default {
   methods: {
     getBook() {
       const order = {
-        bookId: this.book.id,
+        id: this.book.id,
         quantity: this.quantity
       };
-      console.log(order);
       this.$store.dispatch("getBook", order);
+      console.log("what is order", order);
       this.quantity = 0;
     }
   }
 };
 </script>
+<style>
+.image-book {
+  min-height: 60%;
+}
+.form-control {
+  width: 80%;
+}
+.btn-success {
+  background-color: rgb(39, 38, 38);
+  border-color: whitesmoke;
+}
+</style>
