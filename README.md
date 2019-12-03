@@ -13,7 +13,7 @@ This is my own attempt to learn Vue.js for the first time within two days. For m
 - **[Technologies](#technologies)**
 - **[Goals for this project](#goals-for-this-project)**
 - **[Features](#features)**
-- **[create-react-app-docs](#create-vue-app)**
+- **[Create vue app with vue-cli](#create-vue-app)**
 
 ## Technologies 
 
