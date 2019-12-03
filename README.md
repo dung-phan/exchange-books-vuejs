@@ -17,7 +17,7 @@ This is my own attempt to learn Vue.js for the first time within two days. For m
 
 #### 👀👇 Click links to view some samples in this project 👇👀
 
-- **[vue](./src/components/Books/books.vue)**
+- **[vue](./src/components/Books/book.vue)**
 - **[vuex](./src/store/myAccount.js)**
 - **[firebase](./src/components/MyAccount/myAccount.vue)**
 
