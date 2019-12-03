@@ -1,7 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8a91c235-7004-403c-9efb-2a3bc9065c70/deploy-status)](https://app.netlify.com/sites/dog-quiz/deploys)
 
 # BOOK-EXCHANGE
-
+![Screenshoot](screenshot.png)
 ## [ Check out the deployed version here! ](https://book-exchange.netlify.com/)
 
 ## What this project is about
