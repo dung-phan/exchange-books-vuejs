@@ -2,9 +2,7 @@
   <div class="col-sm-6 col-md-4">
     <div class="card border-success mb-3">
       <div class="card-header border-success border-light">
-        <h3 class="card-title">
-          {{ book.name }}
-        </h3>
+        <h3 class="card-title">{{ book.name }}</h3>
       </div>
       <div class="card-body">
         <div>Quantity: {{ book.quantity }}</div>
@@ -13,22 +11,11 @@
         <br />
         <br />
         <div class="pull-left">
-          <input
-            type="number"
-            class="form-control"
-            placeholder="Quantity"
-            v-model="quantity"
-          />
+          <input type="number" class="form-control" placeholder="Quantity" v-model="quantity" />
         </div>
 
         <div class="pull-left">
-          <button
-            class="btn btn-success"
-            @click="giveBook"
-            :disabled="quantity <= 0"
-          >
-            Exchange
-          </button>
+          <button class="btn btn-success" @click="giveBook" :disabled="quantity <= 0">Exchange</button>
         </div>
       </div>
     </div>
@@ -50,7 +37,6 @@ export default {
         id: this.book.id,
         quantity: this.quantity
       };
-      console.log(order);
       this.placeOrder(order);
     }
   }

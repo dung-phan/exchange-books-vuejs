@@ -24,7 +24,6 @@ export default {
         myAccount: this.$store.getters.myAccount,
         books: this.$store.getters.books
       };
-      console.log("what is data", data);
       this.$http.put("data.json", data);
     }
   }

@@ -5,7 +5,6 @@ const state = {
 
 const mutations = {
   GET_BOOK(state, { id, quantity }) {
-    console.log("What in state", state.books);
     const record = state.books.find(element => element.id == id);
     if (record) {
       record.quantity += quantity;
@@ -37,7 +36,6 @@ const getters = {
   myAccount(state, getters) {
     return state.books.map(book => {
       const record = getters.books.find(element => element.id == book.id);
-      console.log("what is record in my account", record);
       return {
         id: book.id,
         quantity: book.quantity,

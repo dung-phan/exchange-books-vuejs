@@ -1,29 +1,21 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <router-link to="/" class="navbar-brand">
-      <img
-        src="https://onix.design/img/planet-2.svg"
-        width="30"
-        height="30"
-        alt=""
-    /></router-link>
+      <img src="../assets/planet-2.svg" width="30" height="30" alt />
+    </router-link>
     <ul class="nav navbar-nav">
       <router-link to="/list" activeClass="active" tag="li">
-        <a>BOOK LIST</a></router-link
-      >
+        <a>BOOK LIST</a>
+      </router-link>
       <router-link to="/account" activeClass="active" tag="li">
-        <a>Your account</a></router-link
-      >
+        <a>Your account</a>
+      </router-link>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li>
         <p style="color:white">
-          <img
-            src="../assets/cart-plus-solid.svg"
-            width="20"
-            height="20"
-            alt=""
-          />Cart: {{ cart }}
+          <img src="../assets/cart-plus-solid.svg" width="20" height="20" alt />
+          Cart: {{ cart }}
         </p>
       </li>
     </ul>
